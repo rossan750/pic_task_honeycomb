@@ -1,17 +1,17 @@
 {
-  "name": "honeycomb",
-  "description": "all-in-one task starter app with jsPsych + React + Electron + psiturk ",
+  "name": "pic_task_honeycomb",
+  "description": "Pic rating task with the Honeycomb template as its foundation. ",
   "author": {
-    "name": "Brown CCV",
-    "email": "ccv-bot@brown.edu",
-    "url": "https://ccv.brown.edu"
+    "name": "Basu lab",
+    "email": "rossan@ucmail.uc.edu",
+    "url": "N/A"
   },
-  "version": "3.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "main": "public/electron.js",
   "homepage": ".",
-  "repository": "https://github.com/brown-ccv/honeycomb",
+  "repository": "https://github.com/rossan750/pic_task_honeycomb",
   "dependencies": {
     "@brown-ccv/behavioral-task-trials": "^2.0.0",
     "@fortawesome/fontawesome-free": "^5.9.0",
