@@ -15,12 +15,11 @@ const jsPsychOptions = {
 // Add your jsPsych timeline here.
 // Honeycomb will call this function for us after the subject logs in, and run the resulting timeline.
 // The instance of jsPsych passed in will include jsPsychOptions above, plus other options needed by Honeycomb.
-const buildTimeline = () =>
-{
+const buildTimeline = () => {
   const preload = {
-  type: jsPsychPreload,
-  auto_preload: true
-}
+    type: jsPsychPreload,
+    auto_preload: true,
+  };
   const primaryTimeline = [
     preload,
     // preamble,
@@ -36,7 +35,7 @@ const buildTimeline = () =>
     showMessage(config, {
       duration: 100000,
       message: lang.task.end,
-    })
+    }),
   ];
 
   return primaryTimeline;
