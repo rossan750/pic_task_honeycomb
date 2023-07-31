@@ -2,7 +2,7 @@ import jsPsychPreload from '@jspsych/plugin-preload';
 import {} from '@brown-ccv/behavioral-task-trials';
 import { config } from '../config/main';
 
-export default function pic_trial(sequence) {
+export default function pic_trial(seq) {
   console.log(config);
   // timeline
   const timeline = [
@@ -10,7 +10,7 @@ export default function pic_trial(sequence) {
     // fixation(config, {
     // duration: 650,
     // }),
-    ...sequence,
+    ...seq,
   ];
 
   return {
