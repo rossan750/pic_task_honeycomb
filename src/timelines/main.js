@@ -1,7 +1,6 @@
 import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
 import jsPsychPreload from '@jspsych/plugin-preload';
-import { create_sequence_1 } from './taskBlock';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honyecomb.
@@ -21,7 +20,7 @@ const buildTimeline = () => {
     type: jsPsychPreload,
     auto_preload: true,
   };
-  const seq_1 = create_sequence_1()
+
   const primaryTimeline = [
     preload,
     // preamble,
