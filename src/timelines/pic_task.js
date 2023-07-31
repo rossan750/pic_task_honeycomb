@@ -1,8 +1,8 @@
-import htmlKeyboardResponse from '@jspsych/plugin-html-keyboard-response';
+import jsPsychPreload from '@jspsych/plugin-preload';
 import {} from '@brown-ccv/behavioral-task-trials';
 import { config } from '../config/main';
 
-const taskTrial = () => {
+export default function pic_trial(sequence) {
   console.log(config);
   // timeline
   const timeline = [
@@ -10,12 +10,12 @@ const taskTrial = () => {
     // fixation(config, {
     // duration: 650,
     // }),
+    ...sequence,
   ];
 
   return {
-    type: htmlKeyboardResponse,
+    type: jsPsychPreload,
+    auto_preload: true,
     timeline,
   };
-};
-
-export default taskTrial;
+}
