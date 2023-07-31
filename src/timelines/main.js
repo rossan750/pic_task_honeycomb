@@ -17,8 +17,10 @@ const jsPsychOptions = {
 // Honeycomb will call this function for us after the subject logs in, and run the resulting timeline.
 // The instance of jsPsych passed in will include jsPsychOptions above, plus other options needed by Honeycomb.
 const buildTimeline = () => {
+  const block = pic_trial(seq_1);
+  console.log(block);
   const primaryTimeline = [
-    pic_trial(seq_1),
+    block,
     // preamble,
     // ageCheck,
     // sliderCheck,

@@ -5,17 +5,18 @@ import { config } from '../config/main';
 export default function pic_trial(seq) {
   console.log(config);
   // timeline
-  const timeline = [
+  const trials = {
     // fixation
     // fixation(config, {
     // duration: 650,
     // }),
-    ...seq,
-  ];
+    timeline: seq,
+};
 
   return {
     type: jsPsychPreload,
-    auto_preload: true,
-    timeline,
+    // auto_preload: true,
+    show_detailed_errors: true, continue_after_error: true, on_error: (img) => console.log("error loading", img),
+    trials: [trials],
   };
 }
