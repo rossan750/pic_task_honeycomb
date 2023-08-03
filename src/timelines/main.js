@@ -21,6 +21,7 @@ const buildTimeline = () => {
   console.log(block);
   const primaryTimeline = [
     block,
+    { timeline: seq_1 },
     // preamble,
     // ageCheck,
     // sliderCheck,

@@ -11,12 +11,14 @@ export default function pic_trial(seq) {
     // duration: 650,
     // }),
     timeline: seq,
-};
+  };
 
   return {
     type: jsPsychPreload,
     // auto_preload: true,
-    show_detailed_errors: true, continue_after_error: true, on_error: (img) => console.log("error loading", img),
+    show_detailed_errors: true,
+    continue_after_error: true,
+    on_error: (img) => console.log('error loading', img),
     trials: [trials],
   };
 }
