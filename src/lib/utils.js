@@ -64,7 +64,7 @@ const importAll = (r) => {
   return r.keys().reduce(importImageByName, {});
 };
 
-// const images = importAll(requireContext('../assets/images', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(requireContext('../assets/images', false, /\.(png|jpe?g|svg)$/));
 
 const getQueryVariable = (variable) => {
   const query = window.location.search.substring(1);
