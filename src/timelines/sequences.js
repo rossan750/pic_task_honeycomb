@@ -6,672 +6,672 @@ const type = jsPsychImageButtonResponse;
 
 const image_1050 = {
   type: type,
-  stimulus: 'src/assets/images/1050.jpg',
+  stimulus: 'assets/images/1050.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1052 = {
   type: type,
-  stimulus: 'src/assets/images/1052.jpg',
+  stimulus: 'assets/images/1052.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1070 = {
   type: type,
-  stimulus: 'src/assets/images/1070.jpg',
+  stimulus: 'assets/images/1070.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1113 = {
   type: type,
-  stimulus: 'src/assets/images/1113.jpg',
+  stimulus: 'assets/images/1113.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1114 = {
   type: type,
-  stimulus: 'src/assets/images/1114.jpg',
+  stimulus: 'assets/images/1114.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1120 = {
   type: type,
-  stimulus: 'src/assets/images/1120.jpg',
+  stimulus: 'assets/images/1120.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1300 = {
   type: type,
-  stimulus: 'src/assets/images/1300.jpg',
+  stimulus: 'assets/images/1300.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1301 = {
   type: type,
-  stimulus: 'src/assets/images/1301.jpg',
+  stimulus: 'assets/images/1301.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1302 = {
   type: type,
-  stimulus: 'src/assets/images/1302.jpg',
+  stimulus: 'assets/images/1302.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1310 = {
   type: type,
-  stimulus: 'src/assets/images/1310.jpg',
+  stimulus: 'assets/images/1310.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1321 = {
   type: type,
-  stimulus: 'src/assets/images/1321.jpg',
+  stimulus: 'assets/images/1321.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1440 = {
   type: type,
-  stimulus: 'src/assets/images/1440.jpg',
+  stimulus: 'assets/images/1440.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1441 = {
   type: type,
-  stimulus: 'src/assets/images/1441.jpg',
+  stimulus: 'assets/images/1441.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1460 = {
   type: type,
-  stimulus: 'src/assets/images/1460.jpg',
+  stimulus: 'assets/images/1460.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1463 = {
   type: type,
-  stimulus: 'src/assets/images/1463.jpg',
+  stimulus: 'assets/images/1463.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1500 = {
   type: type,
-  stimulus: 'src/assets/images/1500.jpg',
+  stimulus: 'assets/images/1500.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1525 = {
   type: type,
-  stimulus: 'src/assets/images/1525.jpg',
+  stimulus: 'assets/images/1525.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1540 = {
   type: type,
-  stimulus: 'src/assets/images/1540.jpg',
+  stimulus: 'assets/images/1540.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1590 = {
   type: type,
-  stimulus: 'src/assets/images/1590.jpg',
+  stimulus: 'assets/images/1590.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1600 = {
   type: type,
-  stimulus: 'src/assets/images/1600.jpg',
+  stimulus: 'assets/images/1600.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1601 = {
   type: type,
-  stimulus: 'src/assets/images/1601.jpg',
+  stimulus: 'assets/images/1601.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1610 = {
   type: type,
-  stimulus: 'src/assets/images/1610.jpg',
+  stimulus: 'assets/images/1610.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1710 = {
   type: type,
-  stimulus: 'src/assets/images/1710.jpg',
+  stimulus: 'assets/images/1710.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1721 = {
   type: type,
-  stimulus: 'src/assets/images/1721.jpg',
+  stimulus: 'assets/images/1721.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1722 = {
   type: type,
-  stimulus: 'src/assets/images/1722.jpg',
+  stimulus: 'assets/images/1722.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1726 = {
   type: type,
-  stimulus: 'src/assets/images/1726.jpg',
+  stimulus: 'assets/images/1726.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1750 = {
   type: type,
-  stimulus: 'src/assets/images/1750.jpg',
+  stimulus: 'assets/images/1750.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1811 = {
   type: type,
-  stimulus: 'src/assets/images/1811.jpg',
+  stimulus: 'assets/images/1811.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1920 = {
   type: type,
-  stimulus: 'src/assets/images/1920.jpg',
+  stimulus: 'assets/images/1920.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1930 = {
   type: type,
-  stimulus: 'src/assets/images/1930.jpg',
+  stimulus: 'assets/images/1930.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1931 = {
   type: type,
-  stimulus: 'src/assets/images/1931.jpg',
+  stimulus: 'assets/images/1931.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_1932 = {
   type: type,
-  stimulus: 'src/assets/images/1932.jpg',
+  stimulus: 'assets/images/1932.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4004 = {
   type: type,
-  stimulus: 'src/assets/images/4004.jpg',
+  stimulus: 'assets/images/4004.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4006 = {
   type: type,
-  stimulus: 'src/assets/images/4006.jpg',
+  stimulus: 'assets/images/4006.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4150 = {
   type: type,
-  stimulus: 'src/assets/images/4150.jpg',
+  stimulus: 'assets/images/4150.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4220 = {
   type: type,
-  stimulus: 'src/assets/images/4220.jpg',
+  stimulus: 'assets/images/4220.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4225 = {
   type: type,
-  stimulus: 'src/assets/images/4225.jpg',
+  stimulus: 'assets/images/4225.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4255 = {
   type: type,
-  stimulus: 'src/assets/images/4255.jpg',
+  stimulus: 'assets/images/4255.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4275 = {
   type: type,
-  stimulus: 'src/assets/images/4275.jpg',
+  stimulus: 'assets/images/4275.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4279 = {
   type: type,
-  stimulus: 'src/assets/images/4279.jpg',
+  stimulus: 'assets/images/4279.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4503 = {
   type: type,
-  stimulus: 'src/assets/images/4503.jpg',
+  stimulus: 'assets/images/4503.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4510 = {
   type: type,
-  stimulus: 'src/assets/images/4510.jpg',
+  stimulus: 'assets/images/4510.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4531 = {
   type: type,
-  stimulus: 'src/assets/images/4531.jpg',
+  stimulus: 'assets/images/4531.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4533 = {
   type: type,
-  stimulus: 'src/assets/images/4533.jpg',
+  stimulus: 'assets/images/4533.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4534 = {
   type: type,
-  stimulus: 'src/assets/images/4534.jpg',
+  stimulus: 'assets/images/4534.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4536 = {
   type: type,
-  stimulus: 'src/assets/images/4536.jpg',
+  stimulus: 'assets/images/4536.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4537 = {
   type: type,
-  stimulus: 'src/assets/images/4537.jpg',
+  stimulus: 'assets/images/4537.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_4538 = {
   type: type,
-  stimulus: 'src/assets/images/4538.jpg',
+  stimulus: 'assets/images/4538.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5260 = {
   type: type,
-  stimulus: 'src/assets/images/5260.jpg',
+  stimulus: 'assets/images/5260.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5270 = {
   type: type,
-  stimulus: 'src/assets/images/5270.jpg',
+  stimulus: 'assets/images/5270.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5593 = {
   type: type,
-  stimulus: 'src/assets/images/5593.jpg',
+  stimulus: 'assets/images/5593.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5600 = {
   type: type,
-  stimulus: 'src/assets/images/5600.jpg',
+  stimulus: 'assets/images/5600.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5631 = {
   type: type,
-  stimulus: 'src/assets/images/5631.jpg',
+  stimulus: 'assets/images/5631.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5660 = {
   type: type,
-  stimulus: 'src/assets/images/5660.jpg',
+  stimulus: 'assets/images/5660.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5700 = {
   type: type,
-  stimulus: 'src/assets/images/5700.jpg',
+  stimulus: 'assets/images/5700.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5760 = {
   type: type,
-  stimulus: 'src/assets/images/5760.jpg',
+  stimulus: 'assets/images/5760.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5764 = {
   type: type,
-  stimulus: 'src/assets/images/5764.jpg',
+  stimulus: 'assets/images/5764.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5779 = {
   type: type,
-  stimulus: 'src/assets/images/5779.jpg',
+  stimulus: 'assets/images/5779.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5781 = {
   type: type,
-  stimulus: 'src/assets/images/5781.jpg',
+  stimulus: 'assets/images/5781.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5814 = {
   type: type,
-  stimulus: 'src/assets/images/5814.jpg',
+  stimulus: 'assets/images/5814.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5831 = {
   type: type,
-  stimulus: 'src/assets/images/5831.jpg',
+  stimulus: 'assets/images/5831.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5833 = {
   type: type,
-  stimulus: 'src/assets/images/5833.jpg',
+  stimulus: 'assets/images/5833.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5836 = {
   type: type,
-  stimulus: 'src/assets/images/5836.jpg',
+  stimulus: 'assets/images/5836.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5891 = {
   type: type,
-  stimulus: 'src/assets/images/5891.jpg',
+  stimulus: 'assets/images/5891.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5961 = {
   type: type,
-  stimulus: 'src/assets/images/5961.jpg',
+  stimulus: 'assets/images/5961.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5971 = {
   type: type,
-  stimulus: 'src/assets/images/5971.jpg',
+  stimulus: 'assets/images/5971.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5972 = {
   type: type,
-  stimulus: 'src/assets/images/5972.jpg',
+  stimulus: 'assets/images/5972.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_5973 = {
   type: type,
-  stimulus: 'src/assets/images/5973.jpg',
+  stimulus: 'assets/images/5973.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8021 = {
   type: type,
-  stimulus: 'src/assets/images/8021.jpg',
+  stimulus: 'assets/images/8021.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8031 = {
   type: type,
-  stimulus: 'src/assets/images/8031.jpg',
+  stimulus: 'assets/images/8031.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8080 = {
   type: type,
-  stimulus: 'src/assets/images/8080.jpg',
+  stimulus: 'assets/images/8080.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8116 = {
   type: type,
-  stimulus: 'src/assets/images/8116.jpg',
+  stimulus: 'assets/images/8116.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8117 = {
   type: type,
-  stimulus: 'src/assets/images/8117.jpg',
+  stimulus: 'assets/images/8117.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8178 = {
   type: type,
-  stimulus: 'src/assets/images/8178.jpg',
+  stimulus: 'assets/images/8178.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8179 = {
   type: type,
-  stimulus: 'src/assets/images/8179.jpg',
+  stimulus: 'assets/images/8179.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8180 = {
   type: type,
-  stimulus: 'src/assets/images/8180.jpg',
+  stimulus: 'assets/images/8180.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8186 = {
   type: type,
-  stimulus: 'src/assets/images/8186.jpg',
+  stimulus: 'assets/images/8186.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8200 = {
   type: type,
-  stimulus: 'src/assets/images/8200.jpg',
+  stimulus: 'assets/images/8200.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8210 = {
   type: type,
-  stimulus: 'src/assets/images/8210.jpg',
+  stimulus: 'assets/images/8210.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8370 = {
   type: type,
-  stimulus: 'src/assets/images/8370.jpg',
+  stimulus: 'assets/images/8370.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8400 = {
   type: type,
-  stimulus: 'src/assets/images/8400.jpg',
+  stimulus: 'assets/images/8400.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8475 = {
   type: type,
-  stimulus: 'src/assets/images/8475.jpg',
+  stimulus: 'assets/images/8475.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8490 = {
   type: type,
-  stimulus: 'src/assets/images/8490.jpg',
+  stimulus: 'assets/images/8490.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_8496 = {
   type: type,
-  stimulus: 'src/assets/images/8496.jpg',
+  stimulus: 'assets/images/8496.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9050 = {
   type: type,
-  stimulus: 'src/assets/images/9050.jpg',
+  stimulus: 'assets/images/9050.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9230 = {
   type: type,
-  stimulus: 'src/assets/images/9230.jpg',
+  stimulus: 'assets/images/9230.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9280 = {
   type: type,
-  stimulus: 'src/assets/images/9280.jpg',
+  stimulus: 'assets/images/9280.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9404 = {
   type: type,
-  stimulus: 'src/assets/images/9404.jpg',
+  stimulus: 'assets/images/9404.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9600 = {
   type: type,
-  stimulus: 'src/assets/images/9600.jpg',
+  stimulus: 'assets/images/9600.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9611 = {
   type: type,
-  stimulus: 'src/assets/images/9611.jpg',
+  stimulus: 'assets/images/9611.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9620 = {
   type: type,
-  stimulus: 'src/assets/images/9620.jpg',
+  stimulus: 'assets/images/9620.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9621 = {
   type: type,
-  stimulus: 'src/assets/images/9621.jpg',
+  stimulus: 'assets/images/9621.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9622 = {
   type: type,
-  stimulus: 'src/assets/images/9622.jpg',
+  stimulus: 'assets/images/9622.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9902 = {
   type: type,
-  stimulus: 'src/assets/images/9902.jpg',
+  stimulus: 'assets/images/9902.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9910 = {
   type: type,
-  stimulus: 'src/assets/images/9910.jpg',
+  stimulus: 'assets/images/9910.jpg',
   prompt: prompt,
   choices: choices,
 };
 
 const image_9921 = {
   type: type,
-  stimulus: 'src/assets/images/9921.jpg',
+  stimulus: 'assets/images/9921.jpg',
   prompt: prompt,
   choices: choices,
 };
