@@ -332,16 +332,21 @@ app.on('activate', function () {
 
 // EXPERIMENT END
 app.on('will-quit', () => {
+  console.log('will-quit',fileCreated, savePath, preSavePath, getFullPath(`pid_${participantID}_${today.getTime()}.json`));
   if (fileCreated) {
     // finish writing file
     stream.write(']');
     stream.end();
     stream = false;
+    console.log('streamFinished');
 
     // copy file to config location
     fs.mkdir(savePath, { recursive: true }, (err) => {
+      console.log('insideMkdir');
       log.error(err);
+      console.log('errorSavingFile',savePath, preSavePath,err);
       fs.copyFileSync(preSavePath, getFullPath(`pid_${participantID}_${today.getTime()}.json`));
     });
+    console.log('fileSaved');
   }
 });

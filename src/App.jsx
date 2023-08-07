@@ -144,7 +144,6 @@ function App() {
     setParticipantID(participantId);
     setLoggedIn(true);
   }, []);
-
   if (isError) {
     return (
       <div className='centered-h-v'>
