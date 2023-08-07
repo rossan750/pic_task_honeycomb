@@ -19,6 +19,7 @@ const jsPsychOptions = {
 const buildTimeline = () => {
   const preload_1 = preload_trial(seq_test);
   const pic_1 = pic_trial(seq_test);
+
   const primaryTimeline = [
     preload_1,
     pic_1,
@@ -38,7 +39,8 @@ const buildTimeline = () => {
     }),
   ];
 
-  return primaryTimeline;
+  // return primaryTimeline;
+  return [primaryTimeline[2]];
 };
 
 // Honeycomb, please include these options, and please get the timeline from this function.
