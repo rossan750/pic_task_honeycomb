@@ -1,6 +1,7 @@
 import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
-import jsPsychPreload from '@jspsych/plugin-preload';
+import { pic_trial, preload_trial } from './pic_task';
+import { seq_test } from './sequences';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honyecomb.
@@ -16,13 +17,12 @@ const jsPsychOptions = {
 // Honeycomb will call this function for us after the subject logs in, and run the resulting timeline.
 // The instance of jsPsych passed in will include jsPsychOptions above, plus other options needed by Honeycomb.
 const buildTimeline = () => {
-  const preload = {
-    type: jsPsychPreload,
-    auto_preload: true,
-  };
+  const preload_1 = preload_trial(seq_test);
+  const pic_1 = pic_trial(seq_test);
 
   const primaryTimeline = [
-    preload,
+    preload_1,
+    pic_1,
     // preamble,
     // ageCheck,
     // sliderCheck,
@@ -34,12 +34,13 @@ const buildTimeline = () => {
     // iusSurvey,
     // debrief,
     showMessage(config, {
-      duration: 100000,
+      duration: 1000,
       message: lang.task.end,
     }),
   ];
 
-  return primaryTimeline;
+  // return primaryTimeline;
+  return [primaryTimeline[2]];
 };
 
 // Honeycomb, please include these options, and please get the timeline from this function.

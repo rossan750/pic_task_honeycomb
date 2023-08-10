@@ -1664,3 +1664,5 @@ export const seq_10 = [
   image_4225,
   image_1300,
 ];
+
+export const seq_test = [image_9404, image_5891, image_1600];
