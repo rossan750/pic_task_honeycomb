@@ -26,9 +26,7 @@ const welcomeMessage = () => {
   };
 };
 
-const welcome = {
+export const welcome = {
   type: htmlKeyboardResponse,
   timeline: [pleaseBiggen(), welcomeMessage()],
 };
-
-export default welcome;

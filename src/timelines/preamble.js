@@ -18,10 +18,8 @@ if (config.USE_PHOTODIODE) {
   timeline.push(startCode());
 }
 
-const preamble = {
+export const preamble = {
   type: htmlKeyboardResponse,
   stimulus: '',
   timeline,
 };
-
-export default preamble;

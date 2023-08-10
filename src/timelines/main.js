@@ -2,6 +2,8 @@ import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
 import { pic_trial, preload_trial } from './pic_task';
 import { seq_test } from './sequences';
+import { preamble } from './preamble';
+import { welcome } from '../trials/welcome';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honyecomb.
@@ -21,9 +23,10 @@ const buildTimeline = () => {
   const pic_1 = pic_trial(seq_test);
 
   const primaryTimeline = [
+    preamble,
+    welcome,
     preload_1,
     pic_1,
-    // preamble,
     // ageCheck,
     // sliderCheck,
     // countdown({ message: lang.countdown.message1 }),
@@ -39,8 +42,7 @@ const buildTimeline = () => {
     }),
   ];
 
-  // return primaryTimeline;
-  return [primaryTimeline[2]];
+  return primaryTimeline;
 };
 
 // Honeycomb, please include these options, and please get the timeline from this function.
