@@ -5,7 +5,7 @@ import { baseStimulus } from '../lib/markup/stimuli';
 
 const pleaseBiggen = () => {
   const stimulus =
-    baseStimulus(`<h1>${lang.welcome.large_window}</h1>`, true) + photodiodeGhostBox();
+    baseStimulus(`<h1>${lang.instructions.large_window}</h1>`, true) + photodiodeGhostBox();
 
   return {
     type: htmlKeyboardResponse,
@@ -16,7 +16,8 @@ const pleaseBiggen = () => {
 };
 
 const welcomeMessage = () => {
-  const stimulus = baseStimulus(`<h1>${lang.welcome.message}</h1>`, true) + photodiodeGhostBox();
+  const stimulus =
+    baseStimulus(`<h1>${lang.instructions.welcome}</h1>`, true) + photodiodeGhostBox();
 
   return {
     type: htmlKeyboardResponse,

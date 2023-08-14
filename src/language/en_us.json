@@ -19,6 +19,7 @@
   },
   "instructions": {
     "welcome": "Welcome, new user!",
+    "large_window": "Please make this window as large as possible.",
     "p1": "During the task, you will see a series of images which are a set of photographs that have been used by scientists around the world for over 20 years.",
     "p2": "You will be asked to rate how much you like or dislike the image. Please rate each image on a scale from -3 (Dislike Very Much) to +3 (Like Very Much). Zero (0) is neutral... meaning you have no feelings either way. It is important you rate each picture based on your initial emotional response. There are no right or wrong answers... just respond with your feelings, and rate the pictures very quickly.",
     "fixation": "Throughout the experiment, you'll see this fixation point at the center of the screen. <br> Try to keep your eyes focused on the fixation point during the task.",
