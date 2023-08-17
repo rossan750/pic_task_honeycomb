@@ -4,6 +4,7 @@ import { pic_trial, preload_trial } from './pic_task';
 import { seq_test } from './sequences';
 import { preamble } from './preamble';
 import { welcome } from '../trials/welcome';
+import { instructions } from './instructions';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honyecomb.
@@ -25,6 +26,7 @@ const buildTimeline = () => {
   const primaryTimeline = [
     preamble,
     welcome,
+    instructions,
     preload_1,
     pic_1,
     // ageCheck,
