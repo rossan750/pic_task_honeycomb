@@ -1665,4 +1665,4 @@ export const seq_10 = [
   image_1300,
 ];
 
-export const seq_test = [image_9404, image_5891, image_1600];
+export const sequences = [seq_1, seq_2, seq_3, seq_4, seq_5, seq_6, seq_7, seq_8, seq_9, seq_10];
