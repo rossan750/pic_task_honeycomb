@@ -26,7 +26,7 @@
     "rate": "Next, you will do one practice trial. You will see the fixation point, followed by an image. Then, you will be asked to submit your rating when you’re ready.",
     "rate_practice": "Try submitting a rating of “0” by dragging the cursor to “0” and clicking to submit.",
     "no_talking": "Try not to talk or move around more than necessary, as movements affect the quality of the recordings.",
-    "instruction_end": "In a few moments, the task will begin.",
+    "instruction_end": "After you press 'next', the task will begin.",
     "block_end": "Block 1 of 2 is now complete.",
     "block_break": "Take a 10 second break and continue to block 2 of 2.",
     "adjust_volume": "Set tablet volume to 50/100.",

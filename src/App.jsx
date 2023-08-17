@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'jspsych/css/jspsych.css';
 import './App.css';
 
 import JsPsychExperiment from './components/JsPsychExperiment';
