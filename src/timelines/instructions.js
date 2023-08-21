@@ -14,4 +14,5 @@ export const instructions = {
     lang.instructions.instruction_end,
   ],
   show_clickable_nav: true,
+  css_classes: ['instructions-text'],
 };

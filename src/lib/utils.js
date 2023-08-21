@@ -94,7 +94,7 @@ const beep = (audioCodes) => {
   o.start();
   o.stop(context.currentTime + 0.4);
 };
-
+const interleave = (arr, thing) => [].concat(...arr.map((n) => [thing, n])).slice(0, -1);
 export {
   sleep,
   jitterx,
@@ -107,4 +107,5 @@ export {
   startKeypressListener,
   getProlificId,
   beep,
+  interleave,
 };
