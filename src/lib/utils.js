@@ -5,10 +5,10 @@ const sleep = (ms) => {
 };
 
 // add a random number between 0 and offset to the base number
-const jitter = (base, offset) => base + Math.floor(Math.random() * Math.floor(offset));
+const jitterx = (base, offset) => base + Math.floor(Math.random() * Math.floor(offset));
 
 // add a random number between 0 and 50 to the base number
-const jitter50 = (base) => jitter(base, 50);
+const jitter50 = (base) => jitterx(base, 50);
 
 // flip a coin
 const randomTrue = () => Math.random() > 0.5;
@@ -97,7 +97,7 @@ const beep = (audioCodes) => {
 
 export {
   sleep,
-  jitter,
+  jitterx,
   jitter50,
   randomTrue,
   deepCopy,
