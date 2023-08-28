@@ -21,8 +21,14 @@ export const instructions_beginning = {
 
 const preload_trials = preload_trial(seq_practice);
 const pic_trials = pic_trial(seq_practice, true);
-console.log(pic_trials);
-console.log(seq_practice);
+
+export const instructions_end = {
+  type: jsPsychInstructions,
+  pages: [lang.instructions.no_talking, lang.instructions.instruction_end],
+  show_clickable_nav: true,
+  css_classes: ['instructions-text'],
+};
+
 export const instructions = {
-  timeline: [instructions_beginning, preload_trials, pic_trials],
+  timeline: [instructions_beginning, preload_trials, pic_trials, instructions_end],
 };
