@@ -19,11 +19,20 @@ export function preload_trial(seq) {
     trials: [trials],
   };
 }
-export function pic_trial(seq) {
+export function pic_trial(seq, is_practice = false) {
   const fixation_trial = fixation(config);
+  // if (is_practice === true) {
+  //   console.log(is_practice, seq);
+  //   seq = seq.map((s) => ({
+  //     ...s,
+  //     is_practice: true,
+  //   }));
+  //   console.log('After', seq);
+  // }
   // We need to append fixation trial to each trial in seq.
   const trials = {
     timeline: interleave(seq, fixation_trial),
+    data: { is_practice },
   };
   return trials;
 }
