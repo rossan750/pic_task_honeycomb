@@ -94,7 +94,10 @@ const beep = (audioCodes) => {
   o.start();
   o.stop(context.currentTime + 0.4);
 };
-const interleave = (arr, thing) => [].concat(...arr.map((n) => [thing, n])).slice(0, -1);
+
+const interleave = (arr, val, addBefore = true) =>
+  [].concat(...arr.map((n) => (addBefore ? [val, n] : [n, val])));
+
 export {
   sleep,
   jitterx,

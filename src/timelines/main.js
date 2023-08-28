@@ -6,7 +6,7 @@ import { instructions } from './instructions';
 import { sequences } from './sequences';
 
 // Add your jsPsych options here.
-// Honeycomb will combine these custom options with other options needed by Honyecomb.
+// Honeycomb will combine these custom options with other options needed by Honeycomb.
 const jsPsychOptions = {
   on_trial_finish: function (data) {
     console.log('A trial just ended, here are the latest data:');
@@ -30,16 +30,6 @@ const buildTimeline = (jsPsych) => {
     instructions,
     preload_trials,
     pic_trials,
-    // preamble,
-    // ageCheck,
-    // sliderCheck,
-    // countdown({ message: lang.countdown.message1 }),
-    // taskBlock(practiceBlock),
-    // countdown({ message: lang.countdown.message2 }),
-    // taskBlock(exptBlock1),
-    // demographics,
-    // iusSurvey,
-    // debrief,
     showMessage(config, {
       duration: 1000,
       message: lang.task.end,
