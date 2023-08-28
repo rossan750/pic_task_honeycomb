@@ -74,3 +74,7 @@ html, body, #root, .App {
   margin: 1rem;
   width: 10rem !important;
 }
+
+.instructions-text {
+  font-size: 1.5em;
+}
