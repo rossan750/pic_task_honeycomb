@@ -80,7 +80,7 @@ function createWindow() {
 // TRIGGER PORT HELPERS
 let triggerPort;
 let portAvailable;
-let SKIP_SENDING_DEV = false;
+let SKIP_SENDING_DEV = true;
 
 const setUpPort = async () => {
   let p;
