@@ -80,7 +80,7 @@ function createWindow() {
 // TRIGGER PORT HELPERS
 let triggerPort;
 let portAvailable;
-let SKIP_SENDING_DEV = false;
+let SKIP_SENDING_DEV = true;
 
 const setUpPort = async () => {
   let p;
@@ -129,7 +129,9 @@ const handleEventSend = (code) => {
     log.warn(message);
 
     const buttons = ['Quit', 'Retry'];
-
+    if (process.env.ELECTRON_START_URL) {
+      buttons.push('Continue Anyway');
+    }
     dialog
       .showMessageBox(mainWindow, {
         type: 'error',
