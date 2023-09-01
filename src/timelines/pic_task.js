@@ -1,13 +1,10 @@
 import jsPsychPreload from '@jspsych/plugin-preload';
-// import { fixation } from '@brown-ccv/behavioral-task-trials';
 import { config } from '../config/main';
+import { fixation } from '../trials/fixation';
+import { interleave } from '../lib/utils';
 
 export function preload_trial(seq) {
-  console.log(config);
-  // timeline
-  const trials = {
-    timeline: seq,
-  };
+  const trials = { timeline: seq };
 
   return {
     type: jsPsychPreload,
@@ -17,10 +14,13 @@ export function preload_trial(seq) {
     trials: [trials],
   };
 }
-export function pic_trial(seq) {
-  // We need to append fixation trial to each trial in seq.
+export function pic_trial(seq, is_practice = false) {
+  const fixation_trial = fixation(config);
+
   const trials = {
-    timeline: seq,
+    // We need to add the fixation trial before each picture in seq.
+    timeline: interleave(seq, fixation_trial),
+    data: { is_practice },
   };
   return trials;
 }

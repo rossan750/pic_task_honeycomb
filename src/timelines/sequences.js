@@ -4,6 +4,27 @@ const prompt =
 const choices = ['-3', '-2', '-1', '0', '1', '2', '3'];
 const type = jsPsychImageButtonResponse;
 
+const image_1270 = {
+  type: type,
+  stimulus: 'assets/images/1270.jpg',
+  prompt: prompt,
+  choices: choices,
+};
+
+const image_1340 = {
+  type: type,
+  stimulus: 'assets/images/1340.jpg',
+  prompt: prompt,
+  choices: choices,
+};
+
+const image_1419 = {
+  type: type,
+  stimulus: 'assets/images/1419.jpg',
+  prompt: prompt,
+  choices: choices,
+};
+
 const image_1050 = {
   type: type,
   stimulus: 'assets/images/1050.jpg',
@@ -675,6 +696,9 @@ const image_9921 = {
   prompt: prompt,
   choices: choices,
 };
+
+export const seq_practice = [image_1270, image_1340, image_1419];
+
 export const seq_1 = [
   image_9404,
   image_5891,
