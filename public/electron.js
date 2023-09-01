@@ -129,9 +129,7 @@ const handleEventSend = (code) => {
     log.warn(message);
 
     const buttons = ['Quit', 'Retry'];
-    if (process.env.ELECTRON_START_URL) {
-      buttons.push('Continue Anyway');
-    }
+
     dialog
       .showMessageBox(mainWindow, {
         type: 'error',
