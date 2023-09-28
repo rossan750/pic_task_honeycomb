@@ -1,6 +1,6 @@
 import jsPsychImageButtonResponse from '@jspsych/plugin-image-button-response';
 const prompt =
-  '<p>Rate the image a value between -3 to 3, where 3 represents the most pleasant rating and -3 represents the least pleasant rating.</p>';
+  '<p>Rate the image on a scale from -3 (Dislike Very Much) to 3 (Like Very Much).</p>';
 const choices = ['-3', '-2', '-1', '0', '1', '2', '3'];
 const type = jsPsychImageButtonResponse;
 
