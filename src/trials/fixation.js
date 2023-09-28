@@ -20,7 +20,7 @@ import { jitterx } from '../lib/utils';
  */
 export function fixation(config, options) {
   const defaults = {
-    duration: 1000,
+    duration: 3000,
     jitter: 50,
     taskCode: 1,
     numBlinks: 1,

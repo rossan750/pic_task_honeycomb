@@ -31,7 +31,7 @@ const buildTimeline = (jsPsych) => {
     preload_trials,
     pic_trials,
     showMessage(config, {
-      duration: 1000,
+      duration: 3000,
       message: lang.task.end,
     }),
   ];
