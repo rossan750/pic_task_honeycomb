@@ -21,9 +21,9 @@ const photodiodeGhostBox = () => {
 
 const pdSpotEncode = (taskCode) => {
   function pulseFor(ms, callback) {
-    $('.photodiode-spot').css({ 'background-color': 'black' });
+    $('.photodiode-spot').css({ 'background-color': 'white' });
     setTimeout(() => {
-      $('.photodiode-spot').css({ 'background-color': 'white' });
+      $('.photodiode-spot').css({ 'background-color': 'black' });
       callback();
     }, ms);
   }
