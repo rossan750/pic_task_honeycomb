@@ -1,9 +1,9 @@
 import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
-import { pic_trial, preload_trial } from './pic_task';
 import { preamble } from './preamble';
+import { numBlocks } from '../trials/numBlocks';
 import { instructions } from './instructions';
-import { sequences } from './sequences';
+import { createPicTaskBlocks } from './taskBlocks';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honeycomb.
@@ -19,17 +19,15 @@ const jsPsychOptions = {
 // Honeycomb will call this function for us after the subject logs in, and run the resulting timeline.
 // The instance of jsPsych passed in will include jsPsychOptions above, plus other options needed by Honeycomb.
 const buildTimeline = (jsPsych) => {
-  const random_index = Math.floor(Math.random() * 10);
-  jsPsych.data.addProperties({ sequence: random_index + 1 });
-  const sequence = sequences[random_index];
-  const preload_trials = preload_trial(sequence);
-  const pic_trials = pic_trial(sequence);
+  const pic_task_timeline = createPicTaskBlocks(jsPsych);
 
   const primaryTimeline = [
+    numBlocks(jsPsych),
+    pic_task_timeline,
     preamble,
     instructions,
-    preload_trials,
-    pic_trials,
+    // preload_trials,
+    // pic_trials,
     showMessage(config, {
       duration: 3000,
       message: lang.task.end,
