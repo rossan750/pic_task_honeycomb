@@ -1690,3 +1690,4 @@ export const seq_10 = [
 ];
 
 export const sequences = [seq_1, seq_2, seq_3, seq_4, seq_5, seq_6, seq_7, seq_8, seq_9, seq_10];
+export const sequence_variables = sequences.map((s) => ({ timeline: s }));

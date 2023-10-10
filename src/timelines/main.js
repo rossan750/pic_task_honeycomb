@@ -1,9 +1,9 @@
 import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
 import { preamble } from './preamble';
-import { numBlocks } from '../trials/numBlocks';
 import { instructions } from './instructions';
 import { createPicTaskBlocks } from './taskBlocks';
+import { numBlocks } from '../trials/numBlocks';
 
 // Add your jsPsych options here.
 // Honeycomb will combine these custom options with other options needed by Honeycomb.
