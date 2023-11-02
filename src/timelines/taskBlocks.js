@@ -2,9 +2,10 @@
 import { sequence_variables } from './sequences';
 // import jsPsychHtmlKeyboardResponse from '@jspsych/plugin-html-keyboard-response';
 import jsPsychImageButtonResponse from '@jspsych/plugin-image-button-response';
-import jsPsychPreload from '@jspsych/plugin-preload';
 import { config } from '../config/main';
 import { fixation } from '../trials/fixation';
+// import { preload_trial } from './pic_task';
+import jsPsychPreload from '@jspsych/plugin-preload';
 
 function createPicTaskBlocks(jsPsych, is_practice = false) {
   // TO-DO: Get numBlocks out of trial data.
@@ -21,11 +22,9 @@ function createPicTaskBlocks(jsPsych, is_practice = false) {
   };
 }
 function createPicTaskBlock(jsPsych, is_practice) {
-  const pic_task = {};
-  const fixation_trial = fixation(config);
-  console.log(fixation_trial, pic_task);
   return [
     {
+      // Trial to preload the 96 stimulus images
       type: jsPsychPreload,
       show_detailed_errors: true,
       continue_after_error: true,
@@ -35,12 +34,11 @@ function createPicTaskBlock(jsPsych, is_practice) {
         return sequence.map(({ stimulus }) => stimulus);
       },
       data: { sequence_number: jsPsych.timelineVariable('sequence') },
-      // trials: [
     },
     {
       timeline: [
         // Display fixation dot.
-        fixation_trial,
+        fixation(config),
         // Display pictures and buttons.
         {
           type: jsPsychImageButtonResponse,
@@ -48,16 +46,21 @@ function createPicTaskBlock(jsPsych, is_practice) {
             '<p>Rate the image on a scale from -3 (Dislike Very Much) to 3 (Like Very Much).</p>',
           choices: ['-3', '-2', '-1', '0', '1', '2', '3'],
           stimulus: function () {
+            console.log(jsPsych.getAllTimelineVariables());
             // const stimulus = jsPsych.timelineVariable('stimulus');
             // console.log('stimulus', stimulus, jsPsych.getAllTimelineVariables());
             // return stimulus;
-            console.log(jsPsych.getAllTimelineVariables());
             // TO-DO: Get stimulus out of timeline_variables.
           },
           data: { is_practice },
         },
       ],
-      timeline_variables: jsPsych.timelineVariable('images'),
+      // timeline_variables: function () {
+      //   const sequence = jsPsych.timelineVariable('images')[0];
+      //   console.log(sequence);
+      //   return sequence;
+      // },
+      timeline_variables: jsPsych.timelineVariable('images')[0],
     },
   ];
   // }

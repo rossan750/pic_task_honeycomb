@@ -1701,3 +1701,4 @@ export const sequence_variables = [
   { sequence: 9, images: [seq_9] },
   { sequence: 10, images: [seq_10] },
 ];
+console.log(sequence_variables[0]['images'][0]);

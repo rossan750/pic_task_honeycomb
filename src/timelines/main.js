@@ -1,7 +1,7 @@
 import { lang, config } from '../config/main';
 import { showMessage } from '@brown-ccv/behavioral-task-trials';
-import { preamble } from './preamble';
-import { instructions } from './instructions';
+// import { preamble } from './preamble';
+// import { instructions } from './instructions';
 import { createPicTaskBlocks } from './taskBlocks';
 import { numBlocks } from '../trials/numBlocks';
 
@@ -24,8 +24,8 @@ const buildTimeline = (jsPsych) => {
   const primaryTimeline = [
     numBlocks(jsPsych),
     pic_task_timeline,
-    preamble,
-    instructions,
+    // preamble,
+    // instructions,
     // preload_trials,
     // pic_trials,
     showMessage(config, {
