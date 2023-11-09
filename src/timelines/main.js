@@ -12,7 +12,8 @@ const jsPsychOptions = {
     console.log('A trial just ended, here are the latest data:');
     console.log(data);
   },
-  default_iti: 250,
+  // IMPORTANT: Default_iti is set to zero to ensure there's no gap between trials.
+  default_iti: 0,
 };
 
 // Add your jsPsych timeline here.
