@@ -7,6 +7,7 @@ import { fixation } from '../trials/fixation';
 // import { preload_trial } from './pic_task';
 import jsPsychPreload from '@jspsych/plugin-preload';
 
+//TO-DO: Need to pass images as an array of stimulus objects.
 function createPicTaskBlocks(jsPsych, is_practice = false) {
   // TO-DO: Get numBlocks out of trial data.
   // const numBlocks = jsPsych.data.get();
@@ -50,7 +51,6 @@ function createPicTaskBlock(jsPsych, is_practice) {
             // const stimulus = jsPsych.timelineVariable('stimulus');
             // console.log('stimulus', stimulus, jsPsych.getAllTimelineVariables());
             // return stimulus;
-            // TO-DO: Get stimulus out of timeline_variables.
           },
           data: { is_practice },
         },
@@ -63,9 +63,5 @@ function createPicTaskBlock(jsPsych, is_practice) {
       timeline_variables: jsPsych.timelineVariable('images')[0],
     },
   ];
-  // }
-  // ];
 }
 export { createPicTaskBlocks };
-
-// TO-DO: Add trials field to preload task, which runs pic_task.
