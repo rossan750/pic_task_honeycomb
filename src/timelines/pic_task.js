@@ -1,40 +1,39 @@
-import jsPsychPreload from '@jspsych/plugin-preload';
 import { config } from '../config/main';
 import { fixation } from '../trials/fixation';
-import { interleave } from '../lib/utils';
+import jsPsychImageButtonResponse from '@jspsych/plugin-image-button-response';
 
-// export function preload_trial(seq) {
-//   const trials = { timeline: seq };
-
-//   return {
-//     type: jsPsychPreload,
-//     show_detailed_errors: true,
-//     continue_after_error: true,
-//     on_error: (img) => console.log('error loading', img),
-//     trials: [trials],
-//   };
-// }
-export const preload_trial = {
-  type: jsPsychPreload,
-  show_detailed_errors: true,
-  continue_after_error: true,
-  on_error: (img) => console.log('error loading', img),
-  images: function () {
-    // eslint-disable-next-line
-      console.log(jsPsych.timelineVariable('images')[0]);
-    return [];
-    // const sequence = jsPsych.timelineVariable('images')[0];
-    // return sequence.map(({ stimulus }) => stimulus);
-  },
-  // data: { sequence_number: jsPsych.timelineVariable('sequence') },
-};
-export function pic_trial(seq, is_practice = false) {
-  const fixation_trial = fixation(config);
-
-  const trials = {
-    // We need to add the fixation trial before each picture in seq.
-    timeline: interleave(seq, fixation_trial),
-    data: { is_practice },
+// Function to generate fixation and image trial.
+export function pic_trial(jsPsych, is_practice = false) {
+  // Keep track of image index inside images array.
+  let IMAGE_INDEX = 0;
+  return {
+    timeline: [
+      // Display fixation dot.
+      fixation(config),
+      // Display pictures and buttons.
+      {
+        type: jsPsychImageButtonResponse,
+        prompt:
+          '<p>Rate the image on a scale from -3 (Dislike Very Much) to 3 (Like Very Much).</p>',
+        choices: ['-3', '-2', '-1', '0', '1', '2', '3'],
+        stimulus: function () {
+          const images = jsPsych.timelineVariable('images')[0];
+          const image = images[IMAGE_INDEX];
+          return image.stimulus;
+        },
+        data: { is_practice },
+      },
+    ],
+    timeline_variables: jsPsych.timelineVariable('images')[0],
+    loop_function() {
+      // Loop through the fixation and image trial for all images in the array.
+      IMAGE_INDEX++;
+      if (IMAGE_INDEX === jsPsych.timelineVariable('images')[0].length) {
+        IMAGE_INDEX = 0; // Stop looping and reset imaging for next sequence.
+        return false;
+      } else {
+        return true;
+      }
+    },
   };
-  return trials;
 }
