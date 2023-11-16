@@ -6,7 +6,6 @@ import { config } from '../config/main';
 import { fixation } from '../trials/fixation';
 // import { preload_trial } from './pic_task';
 import jsPsychPreload from '@jspsych/plugin-preload';
-let imageIndex = 0;
 
 function createPicTaskBlocks(jsPsych, is_practice = false) {
   // TO-DO: Get numBlocks out of trial data.
@@ -23,6 +22,8 @@ function createPicTaskBlocks(jsPsych, is_practice = false) {
   };
 }
 function createPicTaskBlock(jsPsych, is_practice) {
+  // Keep track of image index inside images array.
+  let IMAGE_INDEX = 0;
   return [
     {
       // Trial to preload the 96 stimulus images
@@ -47,22 +48,19 @@ function createPicTaskBlock(jsPsych, is_practice) {
             '<p>Rate the image on a scale from -3 (Dislike Very Much) to 3 (Like Very Much).</p>',
           choices: ['-3', '-2', '-1', '0', '1', '2', '3'],
           stimulus: function () {
-            console.log(imageIndex);
             const images = jsPsych.timelineVariable('images')[0];
-            const image = images[imageIndex];
+            const image = images[IMAGE_INDEX];
             return image.stimulus;
-            // const stimulus = jsPsych.timelineVariable('stimulus');
-            // return stimulus;
           },
           data: { is_practice },
         },
       ],
       timeline_variables: jsPsych.timelineVariable('images')[0],
       loop_function() {
-        imageIndex++;
-        console.log('loop_function', imageIndex, jsPsych.timelineVariable('images')[0].length);
-        // if we've reached the last distractor item, then stop the loop, otherwise continue
-        if (imageIndex === jsPsych.timelineVariable('images')[0].length) {
+        // Loop through the fixation and image trial for all images in the array.
+        IMAGE_INDEX++;
+        if (IMAGE_INDEX === jsPsych.timelineVariable('images')[0].length) {
+          IMAGE_INDEX = 0; // Stop looping and reset imaging for next sequence.
           return false;
         } else {
           return true;
