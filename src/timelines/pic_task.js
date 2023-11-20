@@ -18,20 +18,17 @@ export function preload_trial(seq) {
 export function pic_trial(seq, is_practice = false) {
   const fixation_trial = fixation(config);
   const seq_with_photodiode = seq.map((trial) => {
-    console.log(trial);
-    // return trial;
     return {
       ...trial,
       prompt: trial.prompt + photodiodeGhostBox(),
       on_start: () => {
-        pdSpotEncode(eventCodes.image);
+        pdSpotEncode(eventCodes.image, 1, config);
       },
     };
   });
 
   const trials = {
     // We need to add the fixation trial before each picture in seq.
-    // timeline: interleave(seq, fixation_trial),
     timeline: interleave(seq_with_photodiode, fixation_trial),
     data: { is_practice },
   };

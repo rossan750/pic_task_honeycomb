@@ -1,5 +1,5 @@
 import { config } from '../../config/main';
-import { eventCodes } from '../../config/trigger';
+// import { eventCodes } from '../../config/trigger';
 import $ from 'jquery';
 
 // conditionally load electron and psiturk based on MTURK config variable
@@ -29,6 +29,7 @@ const pdSpotEncode = (taskCode) => {
   }
 
   function repeatPulseFor(ms, i) {
+    // console.log('repeatPulseFor', i, new Date().getMilliseconds());
     if (i > 0) {
       pulseFor(ms, () => {
         setTimeout(() => {
@@ -41,7 +42,7 @@ const pdSpotEncode = (taskCode) => {
   if (config.USE_PHOTODIODE) {
     const blinkTime = 40;
     let numBlinks = taskCode;
-    if (taskCode < eventCodes.open_task) numBlinks = 1;
+    // if (taskCode < eventCodes.open_task) numBlinks = 1;
     repeatPulseFor(blinkTime, numBlinks);
     if (ipcRenderer) ipcRenderer.send('trigger', taskCode);
   }
