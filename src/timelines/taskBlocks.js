@@ -3,7 +3,7 @@ import { sequence_variables } from './sequences';
 import jsPsychPreload from '@jspsych/plugin-preload';
 
 function createPicTaskBlocks(jsPsych, is_practice = false) {
-  // TO-DO: Get numBlocks out of trial data.
+  // TO-DO: numBlocks determines sequences, taskBlock conditionally runs sequence.
   // const numBlocks = jsPsych.data.get();
 
   return {
