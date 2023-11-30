@@ -41,6 +41,9 @@
     "break_p2": " of ",
     "break_p3": "."
   },
+  "block_number": {
+    "set": "Please enter the desired number of task blocks."
+  },
   "countdown": {
     "message": "Picture rating will begin in:"
   }
