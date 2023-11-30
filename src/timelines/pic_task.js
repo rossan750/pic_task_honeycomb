@@ -21,7 +21,7 @@ export function pic_trial(seq, is_practice = false) {
     return {
       ...trial,
       prompt: trial.prompt + photodiodeGhostBox(),
-      on_start: () => {
+      on_load: () => {
         pdSpotEncode(eventCodes.image, 1, config);
       },
     };
