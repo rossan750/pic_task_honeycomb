@@ -1,7 +1,8 @@
 import jsPsychPreload from '@jspsych/plugin-preload';
-import { config } from '../config/main';
+import { config, eventCodes } from '../config/main';
 import { fixation } from '../trials/fixation';
 import { interleave } from '../lib/utils';
+import { photodiodeGhostBox, pdSpotEncode } from '../lib/markup/photodiode';
 
 export function preload_trial(seq) {
   const trials = { timeline: seq };
@@ -16,10 +17,19 @@ export function preload_trial(seq) {
 }
 export function pic_trial(seq, is_practice = false) {
   const fixation_trial = fixation(config);
+  const seq_with_photodiode = seq.map((trial) => {
+    return {
+      ...trial,
+      prompt: trial.prompt + photodiodeGhostBox(),
+      on_load: () => {
+        pdSpotEncode(eventCodes.image, 1, config);
+      },
+    };
+  });
 
   const trials = {
     // We need to add the fixation trial before each picture in seq.
-    timeline: interleave(seq, fixation_trial),
+    timeline: interleave(seq_with_photodiode, fixation_trial),
     data: { is_practice },
   };
   return trials;

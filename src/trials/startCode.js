@@ -10,7 +10,7 @@ const startCode = () => {
   return {
     type: htmlKeyboardResponse,
     stimulus,
-    trial_duration: 2000,
+    trial_duration: 3000,
     on_load: () => {
       pdSpotEncode(eventCodes.open_task);
       // beep(audioCodes);
