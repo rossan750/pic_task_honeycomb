@@ -10,6 +10,7 @@ const comName = 'COM3';
 // NOTE - these event codes must match what is in public/config/trigger.js
 const eventCodes = {
   fixation: 1,
+  image: 3,
   evidence: 5,
   show_earnings: 7,
   test_connect: 32,
