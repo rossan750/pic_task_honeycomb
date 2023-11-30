@@ -29,14 +29,6 @@ const pdSpotEncode = (taskCode) => {
   }
 
   function repeatPulseFor(ms, i) {
-    // let elem = document.getElementById('photodiode-spot');
-    // console.log(elem);
-    // console.log(
-    //   'repeatPulseFor',
-    //   ms,
-    //   i,
-    //   window.getComputedStyle(elem, null).getPropertyValue('background-color')
-    // );
     if (i > 0) {
       pulseFor(ms, () => {
         setTimeout(() => {
