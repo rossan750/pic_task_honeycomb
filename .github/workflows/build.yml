@@ -43,13 +43,17 @@ jobs:
         run: git config --global url."https://github.com/".insteadOf "git://github.com/"
 
       # Set up js package
-      # TODO: Update these versions? @v3 (all workflows)
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: 'npm'
+          cache: npm
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: "3.10"
+    
 
       # Run npm install, build, and test
       - name: npm install
